@@ -1,1 +1,6 @@
-CA.pem
+src/py/CA.pem
+src/dags/.keep
+src/img/.keep
+src/py/.keep
+src/sql/.keep
+.gitignore

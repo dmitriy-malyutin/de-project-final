@@ -26,7 +26,8 @@ def get_curriences():
         currency_code_with,
         currency_with_div
     FROM public.{table_name}
-    WHERE transaction_dt BETWEEN '{partition_date}' AND '{execution_date}'
+    WHERE date_update >= '{partition_date}' 
+        AND date_update < '{execution_date}'
     """
     insert_query = f"""
         INSERT INTO CRAZ93YANDEXRU__STAGING.{table_name} (
