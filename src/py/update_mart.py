@@ -1,9 +1,11 @@
+import os
+import logging
+import sys
+import vertica_python
+from datetime import datetime, timedelta
+
+
 def update_mart():
-    import os
-    import logging
-    import sys
-    import vertica_python
-    from datetime import datetime, timedelta
 
     logging.basicConfig(stream=sys.stdout, level=logging.INFO)
     logging.captureWarnings(True)

@@ -11,7 +11,7 @@ ETL_NAME = 'practicum_final_project'
 ETL_DESC = 'Итоговая работа по курсу Data Engineer'
 ETL_VERSION = 'v1'
 ETL_OWNER = 'Malyutin Dmitriy'
-DAG_ID = '{}_{}'.format(ETL_NAME, ETL_VERSION)
+DAG_ID = f"{ETL_NAME}_{ETL_VERSION}"
 
 envs = {
     "POSTGRS_HOST" : Variable.get('POSTGRS_HOST'),

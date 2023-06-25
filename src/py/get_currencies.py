@@ -1,11 +1,12 @@
-def get_curriences():
-    import psycopg2 as pg
-    import os
-    import logging
-    import sys
-    import vertica_python
-    from datetime import datetime, timedelta
+import psycopg2 as pg
+import os
+import logging
+import sys
+import vertica_python
+from datetime import datetime, timedelta
 
+
+def get_curriences():
     logging.basicConfig(stream=sys.stdout, level=logging.INFO)
     logging.captureWarnings(True)
 

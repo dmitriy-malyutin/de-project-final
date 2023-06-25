@@ -1,10 +1,12 @@
+import psycopg2 as pg
+import os
+import logging
+import sys
+import vertica_python
+from datetime import datetime, timedelta
+
+
 def get_transactions():
-    import psycopg2 as pg
-    import os
-    import logging
-    import sys
-    import vertica_python
-    from datetime import datetime, timedelta
 
     logging.basicConfig(stream=sys.stdout, level=logging.INFO)
     logging.captureWarnings(True)
