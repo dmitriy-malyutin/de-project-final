@@ -39,4 +39,4 @@
 Базы CRAZ93YANDEXRU__STAGE и CRAZ93YANDEXRU__DWH
 
 ### Дашборд в Metabase
-![Alt text](src\img\image.png)
+![Alt text](src/img/image.png)
